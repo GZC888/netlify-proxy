@@ -35,10 +35,10 @@
 访问以下路径即可使用预配置的网站：
 
 ```
-https://fd-gally.netlify.app/hexo2       # Hexo 博客
-https://fd-gally.netlify.app/halo      # Halo 博客
-https://fd-gally.netlify.app/tv        # libre tv 影视站
-https://fd-gally.netlify.app/news      # 新闻聚合
+https://xxxx.netlify.app/hexo2       # Hexo 博客
+https://xxxx.netlify.app/halo      # Halo 博客
+https://xxxx.netlify.app/tv        # libre tv 影视站
+https://xxxx.netlify.app/news      # 新闻聚合
 ```
 
 ### API 代理
