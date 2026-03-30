@@ -9,7 +9,7 @@
 
 *一个基于 Netlify Edge Functions 的强大反向代理服务，支持任意网站内容代理和路径重写。*
 
-[🌍 在线使用](https://fd-gally.netlify.app) | [📝 源代码](https://github.com/gally16/netlify-proxy)
+ [📝 源代码](https://github.com/gally16/netlify-proxy)
 
 </div>
 
@@ -46,9 +46,9 @@ https://fd-gally.netlify.app/news      # 新闻聚合
 使用以下路径访问各种 AI 和第三方 API 服务：
 
 ```
-https://fd-gally.netlify.app/openai    # OpenAI API
-https://fd-gally.netlify.app/claude    # Claude/Anthropic API
-https://fd-gally.netlify.app/gemini    # Google Gemini API
+https://xxxx.netlify.app/openai    # OpenAI API
+https://xxxx.netlify.app/claude    # Claude/Anthropic API
+https://xxxx.netlify.app/gemini    # Google Gemini API
 ```
 
 更多 API 请参考配置文件。
