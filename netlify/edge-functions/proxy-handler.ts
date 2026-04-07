@@ -18,7 +18,7 @@ const PROXY_MAP: Record<string, string> = {
   "/fireworks": "https://api.fireworks.ai",
   "/openrouter": "https://openrouter.ai/api",
 
-  // ===== 你新增的 API（不带 /v1）=====
+  // ===== 新增 API（不带 /v1）=====
   "/gmi": "https://api.gmi-serving.com",
   "/mistral": "https://api.mistral.ai",
   "/nvidia": "https://integrate.api.nvidia.com",
@@ -29,10 +29,15 @@ const PROXY_MAP: Record<string, string> = {
 };
 
 const BLOCKED_REQUEST_HEADERS = new Set([
-  // 来源 / 代理链 / IP
+  // ===== Cloudflare / 来源 / 代理链 / IP =====
   "cf-connecting-ip",
+  "cf-connecting-ipv6",
   "cf-ipcountry",
   "cf-ray",
+  "cf-ew-via",
+  "cf-pseudo-ipv4",
+  "cf-visitor",
+  "cf-worker",
   "cdn-loop",
   "x-forwarded-for",
   "x-forwarded-host",
@@ -45,12 +50,12 @@ const BLOCKED_REQUEST_HEADERS = new Set([
   "client-ip",
   "fastly-client-ip",
 
-  // 由运行时自己处理更稳
+  // ===== 由运行时自己处理更稳 =====
   "host",
   "content-length",
   "accept-encoding",
 
-  // 浏览器上下文 / 指纹
+  // ===== 浏览器上下文 / 指纹 =====
   "cookie",
   "origin",
   "referer",
