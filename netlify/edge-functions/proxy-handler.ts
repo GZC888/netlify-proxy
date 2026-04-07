@@ -28,7 +28,7 @@ const PROXY_MAP: Record<string, string> = {
   "/gmi-cloud": "https://api.gmi-serving.com/v1",
   "/mistral": "https://api.mistral.ai/v1",
   "/nvidia": "https://integrate.api.nvidia.com/v1",
-  "/vercel": "https://ai-gateway.vercel.sh/v1",
+  "/vercel": "https://ai-gateway.vercel.sh",
   "/vercel-ai-gateway": "https://ai-gateway.vercel.sh/v1",
 
   // Nebius 这里改成你自己的 endpoint
